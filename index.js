@@ -1,17 +1,15 @@
-class rectangle {
-  constructor(length, height, breadth) {
-    this.length = length;
-    this.height = height;
-    this.breadth = breadth;
-  }
-  areaRectangle(length, breadth) {
-    let area = length * breadth;
-    return area;
-  }
-  perimeterRectangle(length, breadth) {
-    perimeter = 2 * (length + breadth);
-    return perimeter;
-  }
+function Rectangle(height, width, height) {
+  this.height = height;
+  this.width = width;
+  this.height = height;
+  this.calcArea = function () {
+    return this.height * this.width;
+  };
+  this.calcPerimeter = function () {
+    return (this.height + this.width) * 2;
+  };
 }
-let rectangle = new rectangle(10, 20, 15);
-console.log(rectangle.perimeterRectangle());
+let rectang = new Rectangle(10, 15);
+let area = rectang.calcArea();
+let perimeter = rectang.calcPerimeter();
+console.log(area, perimeter);
