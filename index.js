@@ -4,4 +4,7 @@ class rectangle {
     this.height = height;
     this.breadth = breadth;
   }
+  perimeterRect;
 }
+let rectangle = new rectangle(10, 20, 15);
+console.log(rectangle.perimeterRect());
